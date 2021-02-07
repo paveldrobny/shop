@@ -1,0 +1,45 @@
+.cards-block {
+    user-select: text;
+    text-align: left;
+    margin: 30px 0 10px 0;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    background: rgb(240, 240, 240);
+  }
+  .edit-product,
+  .delete-product {
+    width: calc(50% - 10px);
+    border: none;
+    padding: 6px 0;
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .edit-product {
+    background: rgb(32, 173, 32);
+  }
+  .delete-product {
+    background: rgb(231, 33, 33);
+  }
+  .edit-product:hover {
+    background: rgb(26, 122, 26);
+  }
+  .delete-product:hover {
+    background: rgb(175, 32, 32);
+  }
+  .cards-info {
+    padding: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .cards-info:nth-child(2n) {
+    background: rgb(209, 209, 209);
+  }
+  .cards-info b {
+    padding: 3px;
+    display: inline-block;
+    width: 130px;
+  }

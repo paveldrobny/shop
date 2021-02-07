@@ -1,0 +1,103 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0;
+  background: var(--BG);
+}
+
+/* Custom scrollbar*/
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: rgba(73, 73, 73, 0.5);
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*////////////////////*/
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a, button, li, ul {
+  outline: none;
+  border-style: none;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+summary {
+  height: 35px;
+  line-height: 35px;
+  font-weight: bold;
+  outline: none;
+}
+
+:root {
+  --BG: rgb(243, 243, 243);
+  --maxWidth: 1200px;
+  --bgCards: #fff;
+  --colorT: black;
+  --colorGray: gray;
+  --footer: rgb(241, 241, 241);
+  --footerTxt: rgb(61, 61, 61);
+  --footerLink: black;
+}
+
+[class="darkTheme"] {
+  --BG: rgb(27, 27, 27);
+  --bgCards: rgb(21, 21, 21);
+  --colorT: white;
+  --footer: rgb(35, 35, 35);
+  --footerTxt: rgb(161, 161, 161);
+  --footerLink: white;
+}
+
+/* .fade-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+} */

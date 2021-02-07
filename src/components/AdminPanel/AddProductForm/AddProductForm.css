@@ -1,0 +1,77 @@
+.admin-wrapper {
+    position: relative;
+    top: 35px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.admin-input-content {
+    display: block;
+    margin: 18px 5px;
+}
+
+.admin-input-content label {
+    display: block;
+    text-align: left;
+    padding: 0 0 5px 5px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.admin-input-content input, textarea, select {
+    width: 100%;
+    font-size: 18px;
+    padding: 0 7px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(216, 216, 216);
+    box-sizing: border-box;
+}
+
+.admin-input-content input:focus, textarea:focus, select:focus {
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.15);
+}
+
+.admin-input-content input, select {
+    height: 38px;
+}
+
+.admin-input-content textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 60px;
+    max-height: 115px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#btn_content button {
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 7px 15px;
+    transition: 0.15s;
+    color: white;
+    background: rgb(36, 173, 36);
+}
+
+#btn_content button:hover {
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
+    background: rgb(36, 173, 36);
+}
+
+.cards-preview{
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.cards-preview summary{
+    border-radius: 3px;
+    background: rgb(214, 214, 214);
+}
+
+.cards-preview summary:hover{
+    background: rgb(175, 175, 175);
+}
