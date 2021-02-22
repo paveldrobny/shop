@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
   const urlUpdate =
-    "https://api.github.com/repos/paveldrobny/shop/branches/gh-pages";
+    "https://api.github.com/repos/paveldrobny/shop";
 
   const [update, setUpdate] = useState("");
 
@@ -12,7 +12,7 @@ function Footer() {
     return fetch(urlUpdate)
       .then((res) => res.json())
       .then((out) => {
-        result = out.commit.commit.author.date.slice(0, 10);
+        result = out.updated_at.slice(0, 10);
         setUpdate(result);
       })
       .catch((err) => {
