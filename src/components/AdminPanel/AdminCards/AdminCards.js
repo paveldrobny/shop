@@ -20,7 +20,7 @@ function AdminCards({ card, deleteCard }) {
       </div>
       {cardsInfo.map((cardInfo) => {
         return (
-          <div key={cardInfo.value} className="cards-info">
+          <div key={cardInfo.name} className="cards-info">
             <b>{cardInfo.name}:</b>
             {cardInfo.value}
           </div>

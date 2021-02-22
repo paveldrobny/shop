@@ -11,11 +11,11 @@ function Header() {
       path: "/",
       FAClass: "fas fa-shopping-bag",
     },
-    {
-      name: "WishList",
-      path: "/wishList",
-      FAClass: "fas fa-shopping-cart",
-    },
+    // {
+    //   name: "WishList",
+    //   path: "/wishList",
+    //   FAClass: "fas fa-shopping-cart",
+    // },
     {
       name: "AdminPanel",
       path: "/admin",

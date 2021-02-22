@@ -62,6 +62,7 @@ a:hover .fa-arrow-right {
 
 .oldPrice {
   text-decoration: line-through;
+  text-decoration-color: red;
   font-size: 12px;
   text-align: right;
 }

@@ -1,11 +1,16 @@
 import React from "react";
 import "./Search.css";
 
-function Search() {
+function Search({ onChange, value }) {
   return (
     <div id="search_cont">
-      <input id="search" type="text" placeholder="Поиск..." />
-      <button id="clearText"></button>
+      <input
+        id="search"
+        type="search"
+        placeholder="Search..."
+        value={value}
+        onChange={onChange}
+      />
     </div>
   );
 }

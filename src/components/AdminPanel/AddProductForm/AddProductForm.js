@@ -5,7 +5,7 @@ function AddProductForm({ handleChange, value }) {
   return (
     <div className="admin-input-main">
       <div className="admin-input-content">
-        <label>Имя товара:</label>
+        <label>Product name:</label>
         <input
           type="text"
           name="Name"
@@ -14,7 +14,7 @@ function AddProductForm({ handleChange, value }) {
         />
       </div>
       <div className="admin-input-content">
-        <label>Цена товара:</label>
+        <label>Product price:</label>
         <input
           min="0"
           type="number"
@@ -24,7 +24,7 @@ function AddProductForm({ handleChange, value }) {
         />
       </div>
       <div className="admin-input-content">
-        <label>Скидка на товар %:</label>
+        <label>Product discount %:</label>
         <input
           type="number"
           min="0"
@@ -35,7 +35,7 @@ function AddProductForm({ handleChange, value }) {
       </div>
 
       <div className="admin-input-content">
-        <label>Ссылка фото товара:</label>
+        <label>Product photo link:</label>
         <input
           type="text"
           name="Image"
@@ -44,7 +44,7 @@ function AddProductForm({ handleChange, value }) {
         />
       </div>
       <div className="admin-input-content">
-        <label>Ссылка оплаты товара:</label>
+        <label>Product payment link:</label>
         <input
           type="text"
           name="Pay"
@@ -53,7 +53,7 @@ function AddProductForm({ handleChange, value }) {
         />
       </div>
       <div className="admin-input-content">
-        <label>Описание товара:</label>
+        <label>Product description:</label>
         <textarea
           type="text"
           name="Description"

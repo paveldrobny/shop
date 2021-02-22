@@ -3,9 +3,9 @@ import "./Footer.css";
 
 function Footer() {
   const urlUpdate =
-    "https://api.github.com/repos/paveldrobny/paveldrobny.github.io/branches/gh-pages";
+    "https://api.github.com/repos/paveldrobny/shop/branches/gh-pages";
 
-  const [update, setUpdate] = useState("0000/00/00");
+  const [update, setUpdate] = useState("");
 
   useEffect(() => {
     let result = "";
@@ -25,7 +25,7 @@ function Footer() {
       <div id="footer_MainCont">
         <div id="updateSite">Update: {update}</div>
         <div id="footer_Cont">
-          <a href="https://github.com/paveldrobny">
+          <a href="https://github.com/paveldrobny/shop">
             <i className="fab fa-github"></i>
           </a>
         </div>

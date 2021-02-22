@@ -9,7 +9,7 @@
     box-sizing: border-box;
     width: calc(100% - 10px);
     height: 43px;
-    padding: 0 29px 0 10px;
+    padding: 0 10px 0 10px;
     margin: 0 5px;
     font-size: 19px;
     border: 1px solid rgba(129, 129, 129, 0.15);
@@ -19,44 +19,4 @@
 
 #search_cont input:focus {
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
-}
-
-#clearText {
-    display: block;
-    outline: none;
-    position: absolute;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    font-size: 10px;
-    border: none;
-    border-radius: 50px;
-    color: white;
-    transition: 0.15s;
-    background: rgb(231, 66, 66);
-}
-
-#clearText:hover {
-    background: rgb(200, 57, 57);
-}
-
-#clearText:before, #clearText:after {
-    position: absolute;
-    left: 9px;
-    bottom: 4px;
-    content: " ";
-    height: 12px;
-    width: 2px;
-    background-color: white;
-}
-
-#clearText:before {
-    transform: rotate(45deg);
-}
-
-#clearText:after {
-    transform: rotate(-45deg);
 }

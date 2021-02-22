@@ -27,6 +27,7 @@ function AdminView() {
 
   useEffect(() => {
     const cardData = [];
+
     return db
       .collection("Cards")
       .get()
@@ -36,7 +37,7 @@ function AdminView() {
         });
         setCards(cardData);
       });
-  }, []);
+  });
 
   function addProduct() {
     var str = cards.length + 1;
@@ -50,7 +51,7 @@ function AdminView() {
         Image: newProduct.Image,
         PayLink: newProduct.Pay,
         Description: newProduct.Description,
-        CreateAt: new Date().toLocaleString(),
+        CreateAt: new Date().toLocaleDateString()
       });
     } else {
       alert("One of the fields is empty!");
@@ -72,8 +73,8 @@ function AdminView() {
   }
 
   function deleteCard(id, name, price) {
-    let message = `\nID: ${id}\nИмя товара: ${name}\nЦена товара: ${price}`;
-    if (window.confirm("ВНИМАНИЕ: Удалить этот товар?" + message)) {
+    let message = `\nID: ${id}\nProduct name: ${name}\Product price: ${price}`;
+    if (window.confirm("WARNING: Delete this product?" + message)) {
       db.collection("Cards")
         .doc(id)
         .delete()

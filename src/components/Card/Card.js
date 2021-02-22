@@ -21,7 +21,7 @@ function Card({ card }) {
           </div>
         </div>
       </NavLink>
-      <button className="toWishList">Add to wishlist</button>
+      {/* <button className="toWishList">Add to wishlist</button> */}
     </div>
   );
 }
