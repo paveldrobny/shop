@@ -5,6 +5,7 @@ import {
   Switch,
   Route,
   useLocation,
+  HashRouter,
 } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import firebase from "firebase";
@@ -34,7 +35,7 @@ import Product from "./pages/Product";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <HashRouter>
         <Header />
         <Switch>
           <Route exact={true} path="/" component={Home} />
@@ -42,7 +43,7 @@ function App() {
           <Route path="/admin" component={Admin} />
         </Switch>
         <Footer />
-      </Router>
+      </HashRouter>
     </div>
   );
 }
