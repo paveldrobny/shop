@@ -9,8 +9,8 @@
     "functions.js": "/shop/static/js/functions.9b116ba9.chunk.js",
     "functions.js.map": "/shop/static/js/functions.9b116ba9.chunk.js.map",
     "main.css": "/shop/static/css/main.f89de05a.chunk.css",
-    "main.js": "/shop/static/js/main.f9d91492.chunk.js",
-    "main.js.map": "/shop/static/js/main.f9d91492.chunk.js.map",
+    "main.js": "/shop/static/js/main.c5388a0d.chunk.js",
+    "main.js.map": "/shop/static/js/main.c5388a0d.chunk.js.map",
     "messaging.js": "/shop/static/js/messaging.2871e29f.chunk.js",
     "messaging.js.map": "/shop/static/js/messaging.2871e29f.chunk.js.map",
     "performance.js": "/shop/static/js/performance.8477ca84.chunk.js",
@@ -33,6 +33,6 @@
     "static/js/runtime-main.9ffd8e60.js",
     "static/js/10.514adb22.chunk.js",
     "static/css/main.f89de05a.chunk.css",
-    "static/js/main.f9d91492.chunk.js"
+    "static/js/main.c5388a0d.chunk.js"
   ]
 }
