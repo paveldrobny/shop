@@ -8,5 +8,11 @@ Demo: https://paveldrobny.github.io/shop
 ## 26.03.2021
 * Added
   * Home page
-    * Slider 
+    * Slider shows new products
     * Discount products 
+  * Browse page
+    * Search
+    * Message if search not found
+  * Other 
+    * Slider timer & auto move
+    * Correct price
