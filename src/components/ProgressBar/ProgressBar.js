@@ -1,10 +1,14 @@
 import React from "react";
 import "./ProgressBar.css";
 
-function ProgressBar({ value }) {
+function ProgressBar({ value, type }) {
   return (
     <div id="progressCont">
-      <div id="progressValue" style={{ width: `${value}%` }}></div>
+      <div
+        id="progressValue"
+        className={type}
+        style={{ width: `${value}%` }}
+      ></div>
     </div>
   );
 }

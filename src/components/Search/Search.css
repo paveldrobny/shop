@@ -1,7 +1,7 @@
 #search_cont {
     position: relative;
     max-width: 450px;
-    margin: 65px auto;
+    margin: 55px auto;
 }
 
 #search_cont input {
@@ -12,11 +12,11 @@
     padding: 0 10px 0 10px;
     margin: 0 5px;
     font-size: 19px;
-    border: 1px solid rgba(129, 129, 129, 0.15);
-    border-radius: 5px;
+    border: 1px solid rgba(129, 129, 129, 0.23);
+    border-radius: 2px;
     transition: 0.15s ease-in-out;
 }
 
 #search_cont input:focus {
-    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1);
 }

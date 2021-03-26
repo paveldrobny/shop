@@ -3,10 +3,10 @@ import firebase from "firebase";
 import "firebase/firestore";
 import "./InfoProduct.css";
 import InfoProduct from "./InfoProduct";
-import Loading from "../Loadings/Loading_1/Loading";
+import Loading from "../Loadings/Loading_1";
 import { useLocation } from "react-router";
 
-function InfoProductView() {
+function View() {
   const [info, setInfo] = useState([]);
   const [isLoading, setLoading] = useState(true);
   const location = useLocation();
@@ -37,4 +37,4 @@ function InfoProductView() {
   );
 }
 
-export default InfoProductView;
+export default View;

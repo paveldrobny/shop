@@ -65,8 +65,8 @@ summary {
 }
 
 :root {
-  --BG: rgb(243, 243, 243);
-  --maxWidth: 1200px;
+  --BG: rgb(248, 248, 248);
+  --maxWidth: 1500px;
   --bgCards: #fff;
   --colorT: black;
   --colorGray: gray;
@@ -101,3 +101,26 @@ summary {
   transform: scale(0.9);
   transition: opacity 300ms, transform 300ms;
 } */
+
+
+/* TEst */
+
+.home_title{
+
+  margin-top: 100px;
+  max-width: 1080px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.newCardsTest{
+  max-width: 1130px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}

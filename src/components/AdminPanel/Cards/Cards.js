@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import "./AdminCards.css";
+import "./Cards.css";
 
-function AdminCards({ card, deleteCard }) {
+function Cards({ card, deleteCard }) {
   const [cardsInfo, setCardsInfo] = useState([
     { name: "ID", value: card.id },
     { name: "TITLE", value: card.Name },
     { name: "PRICE", value: card.Price },
     { name: "DISCOUNT", value: card.Discount },
+    { name: "IMAGE LINK", value: card.Image },
     { name: "PAY LINK", value: card.PayLink },
     { name: "DESCRIPTION", value: card.Description },
   ]);
@@ -30,4 +31,4 @@ function AdminCards({ card, deleteCard }) {
   );
 }
 
-export default AdminCards;
+export default Cards;

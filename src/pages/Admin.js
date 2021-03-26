@@ -1,10 +1,10 @@
 import React from "react";
-import AdminView from "../components/AdminPanel/AdminView";
+import AdminPanelView from "../components/AdminPanel/View";
 
 function Admin() {
   return (
     <div className="page-wrapper">
-      <AdminView />
+      <AdminPanelView />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "firebase/firestore";
 import firebase from "firebase";
-import AddProductForm from "./AddProductForm/AddProductForm";
-import AdminCards from "./AdminCards/AdminCards";
+import AddProductForm from "./AddProductForm";
+import AdminCards from "./Cards";
 
 function AdminView() {
   const [cards, setCards] = useState([]);
@@ -37,7 +37,7 @@ function AdminView() {
         });
         setCards(cardData);
       });
-  });
+  }, [db, cards]);
 
   function addProduct() {
     var str = cards.length + 1;
@@ -73,7 +73,7 @@ function AdminView() {
   }
 
   function deleteCard(id, name, price) {
-    let message = `\nID: ${id}\nProduct name: ${name}\Product price: ${price}`;
+    let message = `\nID: ${id}\nProduct name: ${name}\nProduct price: ${price}`;
     if (window.confirm("WARNING: Delete this product?" + message)) {
       db.collection("Cards")
         .doc(id)

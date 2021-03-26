@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import "firebase/firestore";
 import firebase from "firebase";
 import Card from "./Card";
-import "./Cards.css";
-import Loading from "../Loadings/Loading_1/Loading";
-import Search from "../Search/Search";
+import "./Card.css";
+import Loading from "../Loadings/Loading_1";
+import Search from "../Search";
+import NotFound from "./NotFound"
 
 function CardsView() {
   const [cards, setCards] = useState([]);
@@ -16,7 +17,7 @@ function CardsView() {
   useEffect(() => {
     const db = firebase.firestore();
     const cardData = [];
-
+ 
     return db
       .collection("Cards")
       .get()
@@ -27,26 +28,27 @@ function CardsView() {
         setCards(cardData);
         setLoading(false);
       });
-  });
+  }, []);
 
   const filterProducts = cards.filter((card) => {
     return card.Name.toLowerCase().includes(query.toLowerCase());
   });
 
+  let component;
+  if (isLoading) {
+    component = <Loading />;
+  } else if (cards.length && filterProducts.length) {
+    component = filterProducts.map((card) => {
+      return <Card key={card.id} card={card} />;
+    });
+  } else if (!filterProducts.length) {
+    component = <NotFound text={query}/>; 
+  }
+
   return (
     <div>
       <Search value={query} onChange={onChange} />
-      <div className="card-wrapper">
-        {isLoading ? (
-          <Loading />
-        ) : cards.length ? (
-          filterProducts.map((card) => {
-            return <Card key={card.id} card={card} />;
-          })
-        ) : (
-          <h2>Empty list</h2>
-        )}
-      </div>
+      <div className="card-wrapper">{component}</div>
     </div>
   );
 }

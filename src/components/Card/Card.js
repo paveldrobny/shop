@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import CardPrice from "./CardPrice";
+import Price from "./Price";
 
 function Card({ card }) {
   return (
@@ -11,7 +11,7 @@ function Card({ card }) {
           style={{ backgroundImage: `url(${card.Image})` }}
         ></div>
         <div className="card-container">
-        <CardPrice card={card} />
+        <Price card={card} />
         </div>
         <div className="card-name">{card.Name}</div>
         <div className="card-message">

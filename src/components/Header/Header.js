@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import ProgressBar from "../ProgressBar/ProgressBar";
+import ProgressBar from "../ProgressBar";
 import "./Header.css";
 
 function Header() {
   const [percentage, setPercentage] = useState(0);
   const [navLinks, setNavLinks] = useState([
     {
-      name: "Products",
+      name: "Home",
       path: "/",
+      FAClass: "fas fa-home",
+    },
+    {
+      name: "Browse",
+      path: "/browse",
       FAClass: "fas fa-shopping-bag",
     },
     // {
@@ -17,7 +22,7 @@ function Header() {
     //   FAClass: "fas fa-shopping-cart",
     // },
     {
-      name: "AdminPanel",
+      name: "Admin panel",
       path: "/admin",
       FAClass: "fas fa-user-cog",
     },
@@ -43,7 +48,7 @@ function Header() {
 
   return (
     <header id="header" className={headerActive}>
-      <ProgressBar value={percentage} />
+      <ProgressBar value={percentage} type={"headerV"} />
       <div className="header-cont">
         <div className="header-title">Shop</div>
         <div className="header-navBtn">

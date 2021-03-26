@@ -1,7 +1,7 @@
 import React from "react";
-import "./Loading.css";
+import "./Loading_1.css";
 
-function Loading() {
+function Loading_1() {
   return (
     <div className="lds-ellipsis">
       <div></div>
@@ -12,4 +12,4 @@ function Loading() {
   );
 }
 
-export default Loading;
+export default Loading_1;

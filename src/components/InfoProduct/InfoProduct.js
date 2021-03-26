@@ -1,5 +1,5 @@
 import React from "react";
-import CardPrice from "../Card/CardPrice";
+import CardPrice from "../Card/Price";
 
 function InfoProduct({ info }) {
   return (

@@ -1,6 +1,6 @@
 .admin-wrapper {
     position: relative;
-    top: 35px;
+    top: 20px;
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
@@ -24,14 +24,14 @@
     width: 100%;
     font-size: 18px;
     padding: 0 7px;
-    border-radius: 5px;
+    border-radius: 2px;
     outline: none;
     border: 1px solid rgb(216, 216, 216);
     box-sizing: border-box;
 }
 
 .admin-input-content input:focus, textarea:focus, select:focus {
-    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
 .admin-input-content input, select {
@@ -50,7 +50,7 @@
 #btn_content button {
     border: none;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 7px 15px;
     transition: 0.15s;
     color: white;
@@ -58,7 +58,7 @@
 }
 
 #btn_content button:hover {
-    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.3);
     background: rgb(36, 173, 36);
 }
 

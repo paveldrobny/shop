@@ -1,8 +1,9 @@
 import React from "react";
 
-function CardPrice({ card }) {
+function Price({ card }) {
+  
   function NormalPrice(card) {
-    if (card.Price > 0 && card.Discount === 0) {
+    if (card.Price > 0 && card.Discount == 0) {
       return true;
     }
     return false;
@@ -16,7 +17,7 @@ function CardPrice({ card }) {
   }
 
   function DiscountValue(card) {
-    return card.Price - (card.Price * (card.Discount / 100)).toFixed(2);
+    return (card.Price - (card.Price * (card.Discount / 100))).toFixed(2);
   }
 
   return (
@@ -38,4 +39,4 @@ function CardPrice({ card }) {
   );
 }
 
-export default CardPrice;
+export default Price;

@@ -1,5 +1,5 @@
 import React from "react";
-import InfoProductView from "../components/InfoProduct/InfoProductView";
+import InfoProductView from "../components/InfoProduct/View";
 
 function ProductInfo() {
 

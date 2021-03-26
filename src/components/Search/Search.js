@@ -9,6 +9,7 @@ function Search({ onChange, value }) {
         type="search"
         placeholder="Search..."
         value={value}
+        maxLength= "50"
         onChange={onChange}
       />
     </div>
