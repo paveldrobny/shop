@@ -1,7 +1,7 @@
 import React from "react";
 import CardPrice from "../Card/Price";
 
-function InfoProduct({ info }) {
+const InfoProduct = ({ info }) => {
   return (
     <div className="infoCard-container">
       <div className="infoCard-left">
@@ -30,6 +30,6 @@ function InfoProduct({ info }) {
       </div>
     </div>
   );
-}
+};
 
 export default InfoProduct;

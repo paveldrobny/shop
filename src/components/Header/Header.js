@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import ProgressBar from "../ProgressBar";
 import "./Header.css";
 
-function Header() {
+const Header = () => {
   const [percentage, setPercentage] = useState(0);
+  const [active, setActive] = useState(false);
   const [navLinks, setNavLinks] = useState([
     {
       name: "Home",
@@ -28,15 +29,14 @@ function Header() {
     },
   ]);
 
-  let headerActive = "";
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [active]);
 
-  window.addEventListener("scroll", handleScroll);
-
-  if (window.scrollY >= 15) {
-    headerActive += "active";
-  }
-
-  function handleScroll() {
+  const handleScroll = () => {
     let scrollStart =
         document.body.scrollTop || document.documentElement.scrollTop,
       scrollHeight =
@@ -44,11 +44,13 @@ function Header() {
 
     let percentValue = (scrollStart / scrollHeight) * 100;
     setPercentage(percentValue);
-  }
+
+    window.scrollY >= 15 ? setActive(true) : setActive(false);
+  };
 
   return (
-    <header id="header" className={headerActive}>
-      <ProgressBar value={percentage} type={"headerV"} />
+    <header id="header" className={`${active ? "activeScroll" : ""}`}>
+      <ProgressBar value={percentage} type={"header"} />
       <div className="header-cont">
         <div className="header-title">Shop</div>
         <div className="header-navBtn">
@@ -73,6 +75,5 @@ function Header() {
       </div>
     </header>
   );
-}
-
+};
 export default Header;

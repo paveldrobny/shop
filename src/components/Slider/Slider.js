@@ -57,14 +57,14 @@ function Slider() {
   useEffect(() => {
     const id = setTimeout(
       () => setProgress(progress + 1),
-      (time / 100) - time / 1000
+      time / 100 - time / 1000
     );
     return () => clearTimeout(id);
   }, [progress]);
 
-  function sliderTimer() {
+  const sliderTimer = () => {
     setTimeout(() => setSliderMove(true), 500);
-  }
+  };
 
   function changeSlide(isBack) {
     if (isSliderMove) {
@@ -98,8 +98,8 @@ function Slider() {
               })}
             </div>
             <div id="progressWrapper">
-                <ProgressBar value={progress} type={"sliderV"} />
-              </div>
+              <ProgressBar value={progress} type={"sliderV"} />
+            </div>
             <div id="slider-imageCont">
               {sliders.map((slider, index) => {
                 return (
@@ -107,7 +107,7 @@ function Slider() {
                     key={index}
                     index={index}
                     slider={slider}
-                    currentT={current}
+                    current={current}
                   ></SliderPhoto>
                 );
               })}
@@ -118,7 +118,7 @@ function Slider() {
                   <SliderDots
                     key={index}
                     index={index}
-                    currentT={current}
+                    current={current}
                     onClick={() => setCurrent(index)}
                   ></SliderDots>
                 );

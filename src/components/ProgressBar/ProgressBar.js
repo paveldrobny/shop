@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProgressBar.css";
 
-function ProgressBar({ value, type }) {
+const ProgressBar = ({ value, type }) => {
   return (
     <div id="progressCont">
       <div
@@ -11,6 +11,6 @@ function ProgressBar({ value, type }) {
       ></div>
     </div>
   );
-}
+};
 
 export default ProgressBar;

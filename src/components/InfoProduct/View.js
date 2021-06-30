@@ -6,7 +6,7 @@ import InfoProduct from "./InfoProduct";
 import Loading from "../Loadings/Loading_1";
 import { useLocation } from "react-router";
 
-function View() {
+const View = () => {
   const [info, setInfo] = useState([]);
   const [isLoading, setLoading] = useState(true);
   const location = useLocation();
@@ -14,8 +14,8 @@ function View() {
   useEffect(() => {
     getInfo();
   }, []);
-  
-  function getInfo() {
+
+  const getInfo = () => {
     let str = location.pathname;
     let newPath = str.replace("/product/", "");
     const db = firebase.firestore();
@@ -26,15 +26,15 @@ function View() {
       .get()
       .then((doc) => {
         setInfo(doc.data());
-        setLoading(false)
+        setLoading(false);
       });
-  }
+  };
 
   return (
     <div className="infoCard-wrapper">
       {isLoading ? <Loading /> : <InfoProduct info={info} />}
     </div>
   );
-}
+};
 
 export default View;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Search.css";
 
-function Search({ onChange, value }) {
+const Search = ({ onChange, value }) => {
   return (
     <div id="search_cont">
       <input
@@ -9,11 +9,10 @@ function Search({ onChange, value }) {
         type="search"
         placeholder="Search..."
         value={value}
-        maxLength= "50"
+        maxLength="50"
         onChange={onChange}
       />
     </div>
   );
-}
-
+};
 export default Search;

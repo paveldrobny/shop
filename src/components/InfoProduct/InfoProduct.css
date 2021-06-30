@@ -34,6 +34,9 @@
      left: 30px;
      right: 30px;
      bottom: 0;
+     border: 1px solid rgba(122, 122, 122, 0.2);
+     border-radius: 5px;
+     overflow: hidden;
      box-sizing: border-box;
      background-size: cover;
      background-repeat: no-repeat;
@@ -88,9 +91,11 @@
      text-decoration: none;
      margin: auto 10px;
      font-size: 23px;
-     padding: 5px 15px;
+     padding: 9px 17px;
      color: white;
-     border-radius: 5px;
+     border-radius: 3px;
+     border-top-right-radius: 15px;
+     border-bottom-right-radius: 15px;
      text-align: right;
      background: rgb(26, 156, 69);
  }

@@ -5,9 +5,9 @@ import Card from "./Card";
 import "./Card.css";
 import Loading from "../Loadings/Loading_1";
 import Search from "../Search";
-import NotFound from "./NotFound"
+import NotFound from "./NotFound";
 
-function CardsView() {
+const CardsView = () => {
   const [cards, setCards] = useState([]);
   const [query, setQuery] = useState("");
   const [isLoading, setLoading] = useState(true);
@@ -17,7 +17,7 @@ function CardsView() {
   useEffect(() => {
     const db = firebase.firestore();
     const cardData = [];
- 
+
     return db
       .collection("Cards")
       .get()
@@ -42,7 +42,7 @@ function CardsView() {
       return <Card key={card.id} card={card} />;
     });
   } else if (!filterProducts.length) {
-    component = <NotFound text={query}/>; 
+    component = <NotFound text={query} />;
   }
 
   return (
@@ -51,6 +51,6 @@ function CardsView() {
       <div className="card-wrapper">{component}</div>
     </div>
   );
-}
+};
 
 export default CardsView;

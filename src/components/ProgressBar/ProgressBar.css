@@ -11,12 +11,12 @@
   background: rgb(2, 141, 255);
 }
 
-#progressValue.headerV {
+#progressValue.header {
   height: 3px;
   background: rgb(2, 141, 255);
 }
 
-#progressValue.sliderV {
+#progressValue.slider {
   height: 5px;
   border-radius: 1px;
   background: rgb(2, 141, 255, 0.5);

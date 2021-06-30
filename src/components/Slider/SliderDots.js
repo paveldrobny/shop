@@ -1,13 +1,12 @@
 import React from "react";
 
-function SliderDots({index, currentT, onClick}) {
+const SliderDots = ({ index, current, onClick }) => {
   return (
     <div
-      className={index === currentT ? "slider-dots active" : "slider-dots"}
+      className={index === current ? "slider-dots active" : "slider-dots"}
       onClick={onClick}
-    >
-    </div>
+    ></div>
   );
-}
+};
 
 export default SliderDots;

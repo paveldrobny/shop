@@ -7,12 +7,13 @@ import {
   useLocation,
   HashRouter,
 } from "react-router-dom";
-// import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "firebase/firestore";
 
-import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Page from "./pages";
+
+// import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 // function AnimatedSwitch() {
 //   const location = useLocation();

@@ -1,6 +1,6 @@
 import React from "react";
 
-function NotFound({ text }) {
+const NotFound = ({ text }) => {
   return (
     <div id="notFoundWrapper">
       <h2>
@@ -8,6 +8,5 @@ function NotFound({ text }) {
       </h2>
     </div>
   );
-}
-
+};
 export default NotFound;

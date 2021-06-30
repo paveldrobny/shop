@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
 
-function Footer() {
-  const urlUpdate =
-    "https://api.github.com/repos/paveldrobny/shop";
+const Footer = () => {
+  const urlProject = "https://github.com/paveldrobny/shop";
+  const urlUpdate = "https://api.github.com/repos/paveldrobny/shop";
 
   const [update, setUpdate] = useState("");
 
@@ -25,13 +25,13 @@ function Footer() {
       <div id="footer_MainCont">
         <div id="updateSite">Update: {update}</div>
         <div id="footer_Cont">
-          <a href="https://github.com/paveldrobny/shop">
+          <a href={urlProject}>
             <i className="fab fa-github"></i>
           </a>
         </div>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

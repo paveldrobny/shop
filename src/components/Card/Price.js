@@ -1,24 +1,23 @@
 import React from "react";
 
-function Price({ card }) {
-  
-  function NormalPrice(card) {
-    if (card.Price > 0 && card.Discount == 0) {
+const Price = ({ card }) => {
+  const NormalPrice = () => {
+    if (card.Price > 0 && card.Discount === 0) {
       return true;
     }
     return false;
-  }
+  };
 
-  function DiscountPrice(card) {
+  const DiscountPrice = () => {
     if (card.Price > 0 && card.Discount > 0) {
       return true;
     }
     return false;
-  }
+  };
 
-  function DiscountValue(card) {
-    return (card.Price - (card.Price * (card.Discount / 100))).toFixed(2);
-  }
+  const DiscountValue = () => {
+    return (card.Price - card.Price * (card.Discount / 100)).toFixed(2);
+  };
 
   return (
     <div className="card-price">
@@ -37,6 +36,6 @@ function Price({ card }) {
       )}
     </div>
   );
-}
+};
 
 export default Price;

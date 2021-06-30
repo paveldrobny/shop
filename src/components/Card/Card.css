@@ -10,19 +10,19 @@
 .card {
   cursor: pointer;
   position: relative;
-  width: 350px;
-  height: 390px;
+  width: 330px;
+  height: 410px;
   border-radius: 1px;
   margin: 15px 10px;
   text-align: center;
   overflow: hidden;
   transition: .15s;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .20);
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%);
   background: rgb(255, 255, 255);
 }
 
 .card:hover {
-  box-shadow: 0 1px 5px rgba(0, 0, 0, .50);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
 }
 
 a:hover>.card-message {
