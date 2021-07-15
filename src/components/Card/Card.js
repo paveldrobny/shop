@@ -11,9 +11,15 @@ function Card({ card }) {
           style={{ backgroundImage: `url(${card.Image})` }}
         ></div>
         <div className="card-container">
-        <Price card={card} />
+          <div className="card-name-cart">
+            <div className="card-name">{card.Name}</div>
+            <div className="card-cart-wrapper">
+              {/* <button className="card-cart">Add to cart</button> */}
+            </div>
+          </div>
+          <Price isProduct={false} card={card} />
         </div>
-        <div className="card-name">{card.Name}</div>
+
         <div className="card-message">
           <div className="card-message-info">
             View
@@ -21,7 +27,6 @@ function Card({ card }) {
           </div>
         </div>
       </NavLink>
-      {/* <button className="toWishList">Add to wishlist</button> */}
     </div>
   );
 }

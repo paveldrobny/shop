@@ -21,16 +21,17 @@ const Footer = () => {
   });
 
   return (
-    <footer>
-      <div id="footer_MainCont">
-        <div id="updateSite">Update: {update}</div>
-        <div id="footer_Cont">
-          <a href={urlProject}>
+    <div id="footer-wrapper">
+      <footer>
+        <div id="footer-update-text">Update: {update}</div>
+        <div>
+
+          <a id="footer-link" href={urlProject}>
             <i className="fab fa-github"></i>
           </a>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   );
 };
 

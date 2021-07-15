@@ -1,11 +1,20 @@
 import React from "react";
 
-const SliderDots = ({ index, current, onClick }) => {
+const SliderDots = (props) => {
   return (
-    <div
-      className={index === current ? "slider-dots active" : "slider-dots"}
-      onClick={onClick}
-    ></div>
+    <div id="slider-dots-wrapper">
+      {props.sliders.map((slider, index) => {
+        return (
+          <div
+            key={index}
+            className={
+              index === props.current ? "slider-dots is-active" : "slider-dots"
+            }
+            onClick={() => props.setCurrent(index)}
+          ></div>
+        );
+      })}
+    </div>
   );
 };
 

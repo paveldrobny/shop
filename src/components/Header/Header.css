@@ -9,18 +9,18 @@
     background: var(--BG);
 }
 
-#header.activeScroll {
+#header.is-active {
     box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
-.header-cont {
-    color: var(--colorT);
+.header-content {
+    color: var(--color-text);
     margin-left: 10px;
     margin-right: 10px;
     height: 100%;
 }
 
-.header-title, .header-navBtn {
+.header-title, .header-nav-btn {
     display: inline-block;
     line-height: 65px;
 }
@@ -31,34 +31,34 @@
     line-height: 61px;
 }
 
-.header-navBtn {
+.header-nav-btn {
     float: right;
 }
 
-.header-navBtn ul li {
+.header-nav-btn ul li {
     position: relative;
     display: inline-block;
 }
 
-.header-navBtn ul span {
+.header-nav-btn ul span {
     color: rgb(133, 133, 133);
     padding: 0 3px;
 }
 
-.header-navBtn ul li a {
+.header-nav-btn ul li a {
     position: relative;
     padding: 5px 10px;
     font-size: 18px;
     font-weight: 600;
-    color: var(--colorT);
+    color: var(--color-text);
     transition: 0.15s;
 }
 
 @media screen and (max-width: 350px) {
-    .header-navBtn ul li {
+    .header-nav-btn ul li {
         display: none;
     }
-    .header-navBtn ul span {
+    .header-nav-btn ul span {
         display: none;
     }
 }
@@ -67,7 +67,7 @@ i {
     pointer-events: none;
 }
 
-.App-link {
+.app-link {
     position: relative;
     padding: 5px 10px;
     font-size: 18px;
@@ -76,17 +76,17 @@ i {
     outline: none;
 }
 
-.App-link.selected {
+.app-link.selected {
     color: white;
     border-radius: 3px;
     background: rgb(21, 119, 240);
 }
 
-.App-link:hover+.linkMessage {
+.app-link:hover+.link-message {
     display: block;
 }
 
-.linkMessage {
+.link-message {
     display: none;
     position: absolute;
     top: 100%;
@@ -100,7 +100,7 @@ i {
     background: rgba(27, 27, 29, 0.9);
 }
 
-.linkMessage::after {
+.link-message::after {
     content: '';
     position: absolute;
     top: -20px;

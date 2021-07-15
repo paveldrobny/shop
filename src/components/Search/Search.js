@@ -3,13 +3,12 @@ import "./Search.css";
 
 const Search = ({ onChange, value }) => {
   return (
-    <div id="search_cont">
+    <div id="search-wrapper">
       <input
-        id="search"
         type="search"
         placeholder="Search..."
         value={value}
-        maxLength="50"
+        maxLength="30"
         onChange={onChange}
       />
     </div>

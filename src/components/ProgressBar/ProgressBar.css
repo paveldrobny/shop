@@ -1,23 +1,22 @@
-#progressCont {
+.progress-content {
   position: absolute;
   width: 100%;
   height: 3px;
 }
 
-#progressValue {
+.progress-value {
   width: 50%;
   height: 100%;
   transition: 0.1s;
-  background: rgb(2, 141, 255);
 }
 
-#progressValue.header {
+.progress-value-header {
   height: 3px;
   background: rgb(2, 141, 255);
 }
 
-#progressValue.slider {
-  height: 5px;
+.progress-value-slider {
+  height: 3px;
   border-radius: 1px;
   background: rgb(2, 141, 255, 0.5);
 }

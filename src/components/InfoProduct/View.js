@@ -31,7 +31,7 @@ const View = () => {
   };
 
   return (
-    <div className="infoCard-wrapper">
+    <div className="info-card-wrapper">
       {isLoading ? <Loading /> : <InfoProduct info={info} />}
     </div>
   );

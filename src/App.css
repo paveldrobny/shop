@@ -40,17 +40,11 @@ ul, li {
   list-style: none;
 }
 
-a, button, li, ul {
+a, button, li, ul, input {
   outline: none;
   border-style: none;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
-}
-
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 li {
@@ -65,23 +59,12 @@ summary {
 }
 
 :root {
-  --BG: #f8f8f8;
-  --maxWidth: 1500px;
-  --bgCards: #fff;
-  --colorT: black;
+  --BG: #ffffff;
+  --max-width: 1500px;
+  --color-text: black;
   --colorGray: gray;
-  --footer: rgb(241, 241, 241);
-  --footerTxt: rgb(61, 61, 61);
-  --footerLink: black;
-}
-
-[class="darkTheme"] {
-  --BG: rgb(27, 27, 27);
-  --bgCards: rgb(21, 21, 21);
-  --colorT: white;
-  --footer: rgb(35, 35, 35);
-  --footerTxt: rgb(161, 161, 161);
-  --footerLink: white;
+  --footer-bg: rgb(251, 251, 251);
+  --footer-text: rgb(61, 61, 61);
 }
 
 /* .fade-enter {
@@ -105,8 +88,8 @@ summary {
 /* TEst */
 
 .home_title {
-  margin-top: 100px;
-  max-width: 1080px; 
+  margin-top: 80px;
+  max-width: 1080px;
   padding-left: 10px;
   padding-bottom: 5px;
   margin-left: auto;

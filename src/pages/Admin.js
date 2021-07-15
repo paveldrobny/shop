@@ -37,22 +37,24 @@ function Admin() {
         });
         setCards(cardData);
       });
-  }, []);
+  }, [cards]);
 
   function addProduct() {
     var str = cards.length + 1;
     var cID = str.toString();
     if (checkInput()) {
-      db.collection("Cards").doc(cID).set({
-        id: cID,
-        Name: newProduct.Name,
-        Price: newProduct.Price,
-        Discount: newProduct.Discount,
-        Image: newProduct.Image,
-        PayLink: newProduct.Pay,
-        Description: newProduct.Description,
-        CreateAt: new Date().toLocaleDateString(),
-      });
+      db.collection("Cards")
+        .doc(cID)
+        .set({
+          id: Number(cID),
+          Name: newProduct.Name,
+          Price: Number(newProduct.Price),
+          Discount: Number(newProduct.Discount),
+          Image: newProduct.Image,
+          PayLink: newProduct.Pay,
+          Description: newProduct.Description,
+          CreateAt: new Date().toLocaleDateString(),
+        });
     } else {
       alert("One of the fields is empty!");
     }

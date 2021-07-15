@@ -49,11 +49,11 @@ const Header = () => {
   };
 
   return (
-    <header id="header" className={`${active ? "activeScroll" : ""}`}>
-      <ProgressBar value={percentage} type={"header"} />
-      <div className="header-cont">
+    <header id="header" className={`${active ? "is-active" : ""}`}>
+      <ProgressBar value={percentage} type={"progress-value-header"} />
+      <div className="header-content">
         <div className="header-title">Shop</div>
-        <div className="header-navBtn">
+        <div className="header-nav-btn">
           <ul>
             {navLinks.map((link) => {
               return (
@@ -61,12 +61,12 @@ const Header = () => {
                   <NavLink
                     exact
                     to={link.path}
-                    className="App-link"
+                    className="app-link"
                     activeClassName="selected"
                   >
                     <i className={link.FAClass}></i>
                   </NavLink>
-                  <div className="linkMessage">{link.name}</div>
+                  <div className="link-message">{link.name}</div>
                 </li>
               );
             })}
